@@ -1,0 +1,38 @@
+<mat-card class="contact-container">
+
+
+    <mat-card class="contact">
+        <mat-card class="contact-txt" data-aos="fade-right" data-aos-duration="900">
+            <h2>Contact me.</h2>
+            <p>Get in touch via the form below, or by emailling <a href="mailto:masihullahmassudi85@gmail.com">masihullahmassudi85@gmail.com</a></p>
+        </mat-card>
+    </mat-card>
+
+    <mat-card class="form-container">
+
+        <form ng-submit="sendMessage()" ngNoForm class="form" action="https://masihullah-massudi.developerakademie.net/send_mail.php" method="post">
+
+            <mat-form-field appearance="outline" class="full-width" data-aos="fade-right" data-aos-duration="900">
+                <mat-label>Enter your name</mat-label>
+                <input matInput [(ngModel)]="name" type="text" name="name" required>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="full-width" data-aos="fade-right" data-aos-duration="900">
+                <mat-label>Enter your Email address</mat-label>
+                <input matInput pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" type="email" [(ngModel)]="email" name="email" required>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="full-width" data-aos="fade-right" data-aos-duration="900">
+                <mat-label>Enter your message</mat-label>
+                <textarea matInput rows="10" [(ngModel)]="message" type="text" name="message" required>
+                </textarea>
+            </mat-form-field>
+
+            <mat-card class="btn-container" data-aos="fade-up" data-aos-duration="900">
+                <button type="submit" class="btn" mat-stroked-button>Send</button>
+            </mat-card>
+
+        </form>
+    </mat-card>
+
+</mat-card>

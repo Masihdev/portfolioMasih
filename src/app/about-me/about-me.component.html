@@ -1,0 +1,22 @@
+<mat-card class="about-me" id="about-me">
+    <mat-card class="top" data-aos="zoom-in" data-aos-duration="900">
+        <img src="assets/img/masih.JPG" alt="">
+        <mat-card class="txt">
+            <h2>About me</h2>
+            <p>"I'm a fitness enthusiast and front-end developer <br>who loves pushing boundaries."</p>
+        </mat-card>
+    </mat-card>
+
+    <mat-card class="bottom">
+        <mat-card class="journey" *ngFor="let journeyCard of journey; let i= index">
+            <mat-card class="journey-img" data-aos="zoom-out" data-aos-duration="900">
+                <img src="assets/img/{{journeyCard.img}}" alt="">
+            </mat-card>
+            <mat-card class="journey-text" data-aos="zoom-in" data-aos-duration="900">
+                <h2>{{journeyCard.title}}</h2>
+                <P>{{journeyCard.text}}</P>
+            </mat-card>
+        </mat-card>
+    </mat-card>
+
+</mat-card>

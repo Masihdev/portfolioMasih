@@ -1,0 +1,141 @@
+$primary: #Fa2759;
+$secondary: #2Dfcd8;
+$grey: #1A1A1A;
+$black: #000000;
+.links-and-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $black;
+    padding: 30px 150px;
+    height: 80px;
+    border-radius: 0;
+}
+
+.logo {
+    background-color: $black;
+    padding: 0;
+    img {
+        width: 60px;
+        object-fit: cover;
+        cursor: pointer;
+        opacity: 0.9;
+        &:hover {
+            opacity: 1;
+            transition: all 225ms ease-in-out;
+        }
+    }
+}
+
+.links a {
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 17px;
+    color: white;
+    &:hover {
+        color: $primary;
+        transition: all 125ms ease-in-out;
+    }
+}
+
+.links {
+    background-color: $black;
+    padding: 0;
+    position: relative;
+}
+
+// menu mobile
+.menu {
+    background-color: $grey;
+    width: 200px;
+    border-radius: 0;
+    min-height: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    // display: none;
+    padding-top: 150px;
+    // transform: translateX(232px);
+    // transition: transform 250ms ease-in-out;
+}
+
+.d-none {
+    display: none !important;
+    transition: transform 8s ease-in-out
+}
+
+.menu-links {
+    box-shadow: none;
+    background-color: $grey;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    // align-items: center;
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        line-height: 60px;
+        &:hover {
+            color: $primary;
+            transition: all 125ms ease-in-out;
+        }
+    }
+}
+
+.menu-burgar,
+.menu-close {
+    background-color: $black;
+    box-shadow: none;
+    padding: 0;
+    // display: flex;
+    // justify-content: flex-end;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    // z-index: 2;
+}
+
+.test {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden !important;
+}
+
+// responsive view 
+@media (max-width: 1040px) {
+    .links-and-img {
+        padding: 30px 50px;
+    }
+}
+
+@media (max-width: 780px) {
+    .links-and-img {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 541px) {
+    .links {
+        display: none;
+    }
+}
+
+@media (min-width:541px) {
+    .menu,
+    .menu-burgar,
+    .test {
+        display: none;
+    }
+}

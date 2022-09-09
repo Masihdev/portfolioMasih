@@ -1,0 +1,11 @@
+<mat-card class="skills">
+    <h2 data-aos="fade-up" data-aos-duration="900">MY SKILLS</h2>
+    <mat-card class="skills-card-container">
+        <mat-card class="skills-card" *ngFor="let skill of skills; let i= index" data-aos="flip-down" data-aos-duration="900">
+            <mat-card class="skills-card-head">
+                <img src="assets/img/{{skill.img}}" alt="">
+            </mat-card>
+            {{skill.name}}
+        </mat-card>
+    </mat-card>
+</mat-card>

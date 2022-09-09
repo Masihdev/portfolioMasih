@@ -1,0 +1,31 @@
+<mat-card class="links-and-img">
+    <mat-card class="logo">
+        <img src="assets/img/logo3.png" routerLink="/">
+    </mat-card>
+    <mat-card class="links">
+        <a href="" routerLink="/">HOME</a>
+        <a href="#about-me">ABOUT</a>
+        <a href="#my-work">PORTFOLIO</a>
+    </mat-card>
+</mat-card>
+
+<!-- menu for mobiles -->
+
+<mat-card class="menu" id="menu" data-aos="fade-left" data-aos-duration="900">
+    <mat-card (click)="showMenuBurgar()" class="menu-close" id="menu-img1">
+        <img src="assets/img/multiply-2-32.ico" alt="">
+    </mat-card>
+
+    <mat-card class="menu-links">
+        <a href="" routerLink="/" data-aos="fade-up" data-aos-duration="900">HOME</a>
+        <a href="#about-me" data-aos="fade-up" data-aos-duration="900">ABOUT</a>
+        <a href="#my-work" data-aos="fade-up" data-aos-duration="900">PORTFOLIO</a>
+    </mat-card>
+</mat-card>
+
+<mat-card (click)="showMenuClose()" class="menu-burgar" data-aos="fade-left" data-aos-duration="900">
+    <img id="menu-img" src="assets/img/menu-4-32.ico" alt="">
+</mat-card>
+
+<mat-card class="test" id="test" (click)="showMenuBurgar()">
+</mat-card>

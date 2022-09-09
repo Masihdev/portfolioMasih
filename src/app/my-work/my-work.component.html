@@ -1,0 +1,29 @@
+<mat-card class="my-Work" id="my-work">
+    <h2 data-aos="fade-down-right" data-aos-duration="900">MY WORK</h2>
+    <mat-card class="btns-container">
+        <button *ngFor="let type of types; let i=index;" class="my-work-button" [class.active]="type.active" (click)="markTypeAsActive(i)" mat-stroked-button data-aos="fade-down-left" data-aos-duration="900">{{type.name}}</button>
+        <!-- <button id="all" class="my-work-button" data-aos="fade-down-left" data-aos-duration="900" mat-stroked-button>All</button>
+        <button class="my-work-button" data-aos="fade-down-left" data-aos-duration="900" mat-stroked-button>Angular</button>
+        <button class="my-work-button" data-aos="fade-down-left" data-aos-duration="900" mat-stroked-button>JavaScript</button> -->
+    </mat-card>
+</mat-card>
+
+
+<mat-card class="projects-container">
+    <mat-card class="projects-card">
+        <mat-card class="p-card" *ngFor="let project of projects; let i= index" data-aos="zoom-in-right" data-aos-duration="900">
+            <mat-card *ngIf="filterProjects(i)" class="projects">
+                <img src="assets/img/{{project.img}}" alt="">
+                <mat-card class="description">
+                    <span>{{project.name}}</span>
+                    <p>{{project.description}}</p>
+                    <mat-card class="btns">
+                        <a target="_blank" href="{{project.path}}"><button>Try out</button></a>
+                        <a target="_blank" href="{{project.github}}"><button>GitHub</button></a>
+                    </mat-card>
+                </mat-card>
+            </mat-card>
+        </mat-card>
+
+    </mat-card>
+</mat-card>

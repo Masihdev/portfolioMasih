@@ -1,0 +1,212 @@
+$primary: #Fa2759;
+$secondary: #2Dfcd8;
+$grey: #1A1A1A;
+$black: #000000;
+.my-Work {
+    padding: 30px 150px;
+    align-items: center;
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    box-shadow: none;
+    h2 {
+        color: white;
+        margin: 0;
+        font-size: 32px;
+    }
+}
+
+.btns-container {
+    border-radius: 0;
+    box-shadow: none;
+    background-color: $black;
+    padding: 30px 0 0 0;
+}
+
+.my-work-button {
+    border: 3px solid $primary;
+    width: 160px;
+    height: 70px;
+    border-radius: 0;
+    margin: 0 5px;
+    color: white;
+    transition: all ease-in-out 225ms;
+    background-color: $black;
+    cursor: pointer;
+    // &:active {
+    //     background-color: #fa2759;
+    // }
+    &:hover {
+        background-color: $primary;
+    }
+    // &:focus {
+    //     background-color: $primary;
+    // }
+}
+
+.active {
+    background-color: $primary !important;
+}
+
+.projects-container {
+    padding: 0 150px 30px 150px;
+    border-radius: 0;
+    background-color: $black;
+    box-shadow: none;
+}
+
+.p-card {
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: $black;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.projects-card {
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    background-color: $black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects {
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    width: 440px;
+    border-radius: 0;
+    background-color: $black;
+    background-color: green !important;
+    img {
+        width: 440px;
+        height: 350px;
+        background-color: white;
+        // object-fit: cover;
+    }
+    &:hover {
+        .description {
+            opacity: 0.8;
+            transition: all 225ms ease-in;
+        }
+    }
+}
+
+.description {
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: white;
+    height: 350px;
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    span {
+        color: $primary;
+        font-weight: bolder;
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+    p {
+        color: $black;
+        text-align: center;
+        font-size: 16px;
+    }
+    button {
+        border: 3px solid $primary;
+        width: 140px;
+        font-size: 16px;
+        height: 50px;
+        border-radius: 0;
+        margin-top: 30px;
+        color: $primary;
+        transition: all ease-in-out 225ms;
+        cursor: pointer;
+        &:hover {
+            background-color: $primary;
+            color: white;
+        }
+    }
+}
+
+.btns {
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+// responsive view 
+@media (max-width: 590px) {
+    .my-Work {
+        h2 {
+            font-size: 20px;
+        }
+    }
+    .btns-container {
+        padding: 0;
+    }
+    .my-work-button {
+        width: 90px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .projects-container {
+        padding: 20px 50px;
+        overflow-x: hidden;
+    }
+    .projects-card {
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 850px) {
+    .projects-container {
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .projects,
+    .description {
+        height: 300px;
+        width: 300px;
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .projects,
+    .description {
+        height: 270px;
+        width: 270px;
+        img {
+            width: 270px;
+            height: 270px;
+        }
+    }
+}
