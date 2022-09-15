@@ -22,12 +22,6 @@ $black: #000000;
     box-shadow: none;
     border-bottom: 3px solid $secondary;
     border-radius: 0;
-    img {
-        width: 350px;
-        height: 350px;
-        object-fit: cover;
-        border-radius: 100%;
-    }
     h2 {
         font-size: 32px;
         font-weight: bold;
@@ -37,6 +31,16 @@ $black: #000000;
         font-size: 18px;
         line-height: 40px;
     }
+}
+
+.img {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    background-image: url("../../assets/img/photos/masih_img_b (compressed).jpg");
+    background-position: top center;
+    background-size: cover;
+    background-color: $grey;
 }
 
 .txt {

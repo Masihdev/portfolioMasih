@@ -20,7 +20,7 @@ export class MyWorkComponent implements OnInit {
       'img': 'pokedex.png',
       'github': 'https://github.com/Masihdev/PokemonPortfolio',
       'description': 'Based on Javascript and REST API.',
-      'path': 'https://masihullah-massudi.developerakademie.net/PokemonPortfolio'
+      'path': 'https://pokedex.masihullah-massudi.de/'
     },
     {
       'name': 'Ring of Fire',
@@ -28,7 +28,7 @@ export class MyWorkComponent implements OnInit {
       'img': 'ringoffire.png',
       'github': 'https://github.com/Masihdev/ringofire',
       'description': 'Multi-user-app based on Angular and Firebase',
-      'path': 'https://masihullah-massudi.developerakademie.net/ringoffire'
+      'path': 'https://ringoffire.masihullah-massudi.de/'
     },
     {
       'name': 'Join',
@@ -36,7 +36,7 @@ export class MyWorkComponent implements OnInit {
       'img': 'join.png',
       'github': 'https://github.com/Masihdev/CanbanPortfolio',
       'description': 'Task management system based on JavaScript',
-      'path': 'https://masihullah-massudi.developerakademie.net/CanbanPortfolio'
+      'path': 'https://join.masihullah-massudi.de/'
     },
     {
       'name': 'El Pollo Loco',
@@ -44,7 +44,7 @@ export class MyWorkComponent implements OnInit {
       'img': 'el-pollo-loco.png',
       'github': 'https://github.com/Masihdev/El-Pollo-Loco',
       'description': 'Object-oriented jump-and-run-game based on JavaScript.',
-      'path': 'https://masihullah-massudi.developerakademie.net/El-Pollo-Loco'
+      'path': 'https://elpolloloco.masihullah-massudi.de/'
     }
     ]
 
